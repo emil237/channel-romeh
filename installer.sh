@@ -87,8 +87,8 @@ rm -rf ${TMPDIR}/channels_backup_user_"${VERSION}"* astra-* bbc_pmt_v6*
 echo
 set -e
 echo "Downloading And Insallling Channel Please Wait ......"
-wget $MY_URL/channels_backup_by_Emil-Nabil.tar.gz -qP $TMPDIR
-tar -zxf $TMPDIR/channels_backup_by_Emil-Nabil.tar.gz -C /
+wget $MY_URL/ -qP $TMPDIR
+tar -zxf $TMPDIR/channels_backup_by-romeh.tar.gz -C /
 sleep 5
 set +e
 echo
@@ -182,4 +182,5 @@ else
 fi
 
 exit 0
+
 
