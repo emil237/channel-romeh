@@ -86,8 +86,8 @@ rm -rf ${TMPDIR}/channels_backup_by_"${VERSION}"* astra-* bbc_pmt_v6*
 #########################
 echo
 set -e
-echo "Downloading And Insallling Channel Please Wait ......"
-wget $MY_URL/ -qP $TMPDIR
+echo "Downloading And Insalling Channel Please Wait ......"
+wget $MY_URL/channels_backup_by-romeh.tar.gz -qP $TMPDIR
 tar -zxf $TMPDIR/channels_backup_by-romeh.tar.gz -C /
 sleep 5
 set +e
@@ -103,7 +103,7 @@ if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
     sleep 2
 else
     set -e
-    echo "Downloading And Insallling Config BBC Please Wait ......"
+    echo "Downloading And Insalling Config BBC Please Wait ......"
     wget $MY_URL/bbc_pmt_v6.tar.gz -qP $TMPDIR
     tar -xzf $TMPDIR/bbc_pmt_v6.tar.gz -C $TMPDIR
     set +e
@@ -157,7 +157,7 @@ if [ $OSTYPE = "Opensource" ]; then
 fi
 
 #########################
-rm -rf ${TMPDIR}/channels_backup_by_Emil-Nabil.tar.gz
+rm -rf ${TMPDIR}/channels_backup_by-romeh.tar.gz
 rm -rf ${TMPDIR}/* astra-
 rm -rf ${TMPDIR}/* bbc_pmt_v6
 
@@ -182,6 +182,7 @@ else
 fi
 
 exit 0
+
 
 
 
